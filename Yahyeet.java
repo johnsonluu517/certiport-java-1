@@ -15,6 +15,18 @@ public class Yahyeet
 
 
             // TO DO: Calculate student average scores here
+            File avg = new File(args[0]);
+            Scanner scan = new Scanner(f);
+            int numStudents = Integer.parseInt(arg[1]);
+            double avg = 0.0;
+            int count = 0;
+            for (int i = 0; i <numStudents; i++)
+            {
+                avg += scan.nextInt();
+                count++;
+            }
+            scan.close();
+            System.out.println(avg/count);
         }
         else
         {
